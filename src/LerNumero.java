@@ -5,6 +5,8 @@ public class LerNumero {
         int numero;
 
         Scanner leitorScanner = new Scanner(System.in);
+
+        System.out.println("Digite seu número:");
         numero = leitorScanner.nextInt();
 
         if (numero >= 100 && numero <= 200 ){
