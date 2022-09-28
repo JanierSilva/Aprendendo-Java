@@ -1,18 +1,21 @@
 import java.util.Scanner;
 
 public class LerNumero {
-    public static void main(String[] args){
-        int numero;
+    public static void main(String[] args) {
+        float numero;
 
-        Scanner leitorScanner = new Scanner(System.in);
+        Scanner leia = new Scanner(System.in);
 
-        System.out.println("Digite seu número:");
-        numero = leitorScanner.nextInt();
+        System.out.println("Qual seu número?");
+        numero = leia.nextFloat();
 
-        if (numero >= 100 && numero <= 200 ){
-            System.out.println("O número está no intervalo!");
-        } else {
-            System.out.println("O número não está no intervalo!");
+        if (numero >=50 && numero <= 100){
+            System.out.println("Este número está no intevalo.");
+        }   else {
+            System.out.println("Este número não está no intervalo.");
         }
     }
+
 }
+
+
