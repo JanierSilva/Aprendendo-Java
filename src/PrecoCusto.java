@@ -10,8 +10,8 @@ public class PrecoCusto {
         float totalVenda = 0.0f;
 
         Scanner leitor = new Scanner(System.in);
-
-        for (int i = 0; i < 40; i++){
+        int i = 0;
+        for (; i < 3; i++){
             System.out.println("Digite o nome do Produto:");
             nomeProduto = leitor.nextLine();
 
@@ -32,7 +32,10 @@ public class PrecoCusto {
                 } else {
                     System.out.println("Lucro");
                 }
+                System.out.println(nomeProduto +", Preço de Custo = "+ precoCusto +", Preço de Venda = "+ precoVenda);
             }
+            System.out.println("A média do preço de custo é de :"+(totalCusto / i));
+            System.out.println("A média do preço de venda é de :"+(totalVenda / i));
         }
     }
 }
